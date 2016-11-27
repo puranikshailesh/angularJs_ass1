@@ -9,9 +9,6 @@ $scope.inputText = "";
 
 $scope.totalItems = function () {
     var totalNameValue = checkLunchItems($scope.inputText);
-
-    console.log("totalNameValue=" + totalNameValue);
-
     if( totalNameValue === 0 ){
        $scope.LunchItemEvaluation = "Please enter data first";
     }
@@ -29,8 +26,6 @@ $scope.totalItems = function () {
 
     if( string.length != 0  )
     {
-      console.log("LunchItemList=" + lunchItemList)
-      console.log("LunchItemList length=" + lunchItemList.length)
       for( var i=0; i< lunchItemList.length ; i++ )
       {
         totalLunchItems++;
